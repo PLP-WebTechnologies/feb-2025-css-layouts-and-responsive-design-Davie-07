@@ -1,0 +1,60 @@
+
+/* Styles for Desktop */
+body{
+    background-color: dimgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.section1, .section2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+
+/* Media Query for Tablets  */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .section1, .section2 {
+        padding: 10px;
+    }
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 5px 0;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    .section1, .section2 {
+        padding: 10px;
+    }
+}
